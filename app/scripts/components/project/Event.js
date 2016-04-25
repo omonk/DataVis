@@ -7,14 +7,14 @@ class Events extends React.Component {
     }
 
     render() {
-        // let rows = this.props.events.map( person => {
-        //     return <Event key={events.id} data={event}/>
-        // })
+        let rows = this.props.events.map( event => {
+            return <Event key={event.id} data={event}/>
+        })
 
         return (
             <ul>
                 {/*{rows}*/}
-                Events: {this.props.events}
+                {this.props.events}
             </ul>
         )
     }
